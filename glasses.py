@@ -74,6 +74,7 @@ for tile in product_tiles:
             # former price
             former_price_tag = price_container.find('div', class_='product-list-price') 
             former_price = former_price_tag.text if former_price_tag else 'Unknown'
+            
             # Current price
             current_price_tag = price_container.find('div', class_='product-offer-price') 
             current_price = current_price_tag.text if current_price_tag else 'Unknown'
@@ -106,6 +107,7 @@ for tile in product_tiles:
         'Discount': discount,
         'Product_Link': product_link
     }
+
     # Append data to the list
     products.append(data)
 
